@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Fernando Reynoso - Portfolio</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #0f172a, #1e293b);
+      color: #e2e8f0;
+      margin: 0;
+    }
+
+    header {
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    h1 {
+      color: #38bdf8;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      color: #22c55e;
+    }
+
+    section {
+      max-width: 800px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    .card {
+      background-color: rgba(30, 41, 59, 0.8);
+      padding: 20px;
+      margin: 15px 0;
+      border-radius: 12px;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+    }
+
+    button {
+      background-color: #38bdf8;
+      color: #0f172a;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    button:hover {
+      background-color: #0ea5e9;
+    }
+
+    #mensaje {
+      margin-top: 10px;
+      color: #22c55e;
+      display: none;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>Fernando Gabriel Reynoso</h1>
+  <p>Desarrollador web en formación | Estudiante UNLP</p>
+</header>
+
+<section>
+
+  <h2>Sobre mí</h2>
+  <div class="card">
+    <p>
+      Soy estudiante de música en la UNLP y actualmente estoy formándome en programación
+      y desarrollo web. Me interesa crecer profesionalmente en el área tecnológica.
+    </p>
+  </div>
+
+  <h2>Habilidades</h2>
+  <div class="card">
+    <ul>
+      <li>HTML, CSS, JavaScript (básico)</li>
+      <li>Python (básico)</li>
+      <li>Trabajo en equipo</li>
+    </ul>
+  </div>
+
+  <h2>Proyectos</h2>
+  <div class="card">
+    <p>Portfolio personal desarrollado con HTML, CSS y JavaScript.</p>
+  </div>
+
+  <h2>Contacto</h2>
+  <div class="card">
+    <p>Email: fernando.g.reynoso@gmail.com</p>
+
+    <button onclick="mostrarMensaje()">Contactar</button>
+    <p id="mensaje">¡Gracias por visitar mi portfolio!</p>
+  </div>
+
+</section>
+
+<script>
+  function mostrarMensaje() {
+    const mensaje = document.getElementById("mensaje");
+    mensaje.style.display = "block";
+  }
+</script>
+
+</body>
+</html>
